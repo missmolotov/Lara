@@ -1,0 +1,1589 @@
+/*
+				Version 2.0
+				Stylesheet by miss_molotov
+        Created November 2016, first used on r/PS4Pro.
+				Last modified: 13 May 2017
+				Details: This is a custom template called 'Lara' made by u/miss_molotov
+				-------------------------------------------------------------------------- */
+
+body {
+    background-color: #f7f7f7;
+    background: linear-gradient(to right, #f7f7f7, #e3e6fc);
+    color: #0c0c0c;
+
+}
+
+p, table, li {
+    color: #0c0c0c;
+}
+
+th {
+    background-color: #1668c3;
+    color: #f7f7f7;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+    color: #1668c3;
+}
+
+.md p {
+    color: #0c0c0c;
+}
+
+a {
+    color: #1668c3;
+}
+
+a:hover {
+    color: #3a4ed5;
+}
+
+a:visited {
+    color: #0f4989;
+}
+
+a:active {
+   color: orange;
+}
+
+.side li {
+    margin-bottom: 10px
+}
+
+.side {
+   background-color: transparent;
+}
+
+#header {
+   background-color: #0c0c0c;
+   height: 100px;
+}
+
+/* removes Reddit logo */
+
+/*#header-img.default-header{ 
+   display: none;  
+}*/
+
+/* Adds home link back onto logo, removes text link*/
+/*
+.pagename a {
+    background-image: url("%%PS4-Pro-Logo-Transparent%%");
+    background-repeat: no-repeat;
+    font-size: 0px;
+    display: inline-block;
+    background-size: 324px auto;
+    width: 324px;  
+    height: 100px;
+    position: relative;
+    top: -25px;
+}*/
+
+#header-img.default-header
+
+/*#header-img-a*/ {
+    background: url(%%PlayStation-Logo-Transparen%%);
+    display: inline-block;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position: 0 0px;
+    width: 72px;
+    height: 55px;
+    margin-top: 5px;
+    margin-right: 19px;
+    margin-left: 12px;
+    float: left;
+}
+
+
+.redditname a {
+    background: url(%%PlayStation-4-Pro-Logo-Tran%%);
+    background-repeat: no-repeat;
+    display: block;
+    width: 229px;
+    height: 35px;
+    float: left;
+    font-size: 0px;
+    margin-top: 18px;
+}
+
+/* Tabmenu (top menu under header) */
+
+#header .tabmenu {
+  font-size: 14px;
+  position: absolute;
+  top: 80px;
+  left: 0px;   background-color: #0c0c0c;
+  margin: 0px;
+  width: 100%;
+  font-family: 'Arial Bold', Arial,Helvetica, sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 1em 1em;
+  border-bottom: 15px solid transparent;
+  -moz-border-image: -moz-linear-gradient(to left, #0c0c0c 0%, #1668c3 100%); 
+  -webkit-border-image: -webkit-linear-gradient(to left, #0c0c0c 0%, #1668c3 100%);
+  border-image: linear-gradient(to left, #0c0c0c 0%, #1668c3 100%);
+  border-image-slice: 1;
+}
+
+#header .tabmenu li {
+  margin: 0px 0px; 
+}
+
+#header .tabmenu li:nth-of-type(1) {margin-left: 4px;}
+
+#header .tabmenu li a {
+  padding: 0px 6px;
+  background-color: #0c0c0c;
+  color: #98aaa9;
+}
+
+#header .tabmenu li a:hover {
+    color: #ffffff;
+    padding-bottom: 4px;
+    border-bottom: solid 4px #f48404;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+#header .tabmenu li a:active {
+    background-color: #0c0c0c; 
+    transition: all 0s
+}
+
+#header .tabmenu li.selected a {
+    padding-bottom: 4px;
+    border-bottom: solid 4px #0f6abc;
+    border-left: 0px;
+    border-right: 0px;
+  border-top: 0px;
+  color: #ffffff;
+}
+
+/* Karma and preferences bar */
+
+#header-bottom-right {
+    position: absolute;
+    background-color: #000000;
+    padding: 0px 15px 0px 5px;
+    line-height: 12px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 0px;
+    top: 20px;
+    bottom: 0px;
+    height: 15px;
+
+}
+
+#header-bottom-right a {
+    color: #98aaa9;
+}
+
+.user {
+    color: #cccccc;
+}
+
+/* subreddit select bar */
+
+/*
+
+#sr-header-area  {
+    background-color: #000000;
+    color: #98aaa9;
+}
+
+*/
+
+#ad_main_top {
+    position: relative;
+    right: 10px;
+}
+
+#ad_main {
+    position: relative;
+    right: 10px;
+    top: -35px;
+}
+
+.link .rank {
+    top: 6px;
+    position: relative;
+}
+
+/* Sidebar text positioning */
+
+.titlebox {
+    background-color: #0c0c0c;
+    position: relative;
+    top: -45px;
+    right: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 2px 0 rgb(12, 12, 12),0 3px 1px -2px rgb(12, 12, 12),0 1px 5px 0 rgb(12, 12, 12);
+}
+
+/* Sidebar Contents Formatting */
+
+.side .md li {
+    margin-left: -25px;
+    color: #98aaa9;
+}
+
+.side .md a {
+    color: #ff8800;
+}
+
+.side .md a:hover {
+    color: #ffaf02;
+}
+
+.side .md a:active {
+    color: #fca541;
+}
+
+.side .md a:visited {
+    color: #f48404;
+}
+
+.tagline a {
+    color: #ff8800;
+}
+
+.tagline a:hover {
+    color: #ffaf02;
+}
+
+.tagline a:active {
+    color: #fca541;
+}
+
+.tagline a:visited {
+    color: #f48404;
+}
+
+.sidecontentbox .content {
+    margin: 0;
+    padding: 5px;
+    border: 0px solid gray;
+    font-size: larger;
+    list-style: none;
+    background-color: #0c0c0c;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.sidecontentbox .title h1 {
+    color: #1668c3;
+}
+
+.icon-menu a {
+    background: #0c0c0c none no-repeat scroll center left;
+}
+
+
+.side .md h2 {
+    background-color: #333333;
+    color: #f7f7f7;
+    padding: 4px 1em 2px 1em;
+    font-size: 14px;
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: -14px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.side .md a[href="https://playstation.reddit.com"], 
+.side .md a[href="https://ps4.reddit.com"], 
+.side .md a[href="https://psvr.reddit.com"], 
+.side .md a[href="https://vita.reddit.com"], 
+.side .md a[href="https://psx.reddit.com"], 
+.side .md a[href="https://ps2.reddit.com"], 
+.side .md a[href="https://ps3.reddit.com"], 
+.side .md a[href="https://VitaTV.reddit.com"],
+.side .md a[href="https://psw.reddit.com"], 
+.side .md a[href="https://playstationplus.reddit.com"] {
+    width: 42px;
+    text-align: center;
+    color: #f7f7f7;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#1668c3, #0f4989); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1668c3, #0f4989); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1668c3, #0f4989); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1668c3, #0f4989); /* Standard syntax */
+}
+
+.side .md a:hover[href="https://playstation.reddit.com"], 
+.side .md a:hover[href="https://ps4.reddit.com"], 
+.side .md a:hover[href="https://psvr.reddit.com"], 
+.side .md a:hover[href="https://vita.reddit.com"], 
+.side .md a:hover[href="https://playstationplus.reddit.com"] {
+    width: 42px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#0f4989, #1668c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0f4989, #1668c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0f4989, #1668c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0f4989, #1668c3); /* Standard syntax */
+}
+
+.side .titlebox h1.redditname {
+    display: none;
+}
+
+/* Moderator tools */
+
+#moderation_tools {
+    position: relative;
+    top: -40px;
+    right: 10px;
+    background-color: #ffffff;
+}
+
+/* Create Reddit */
+
+.create {
+    position: relative;
+    right: 10px;
+    top: -30px;
+    background-color: #ffffff;
+}
+
+.sidebox .subtitle {
+    position: relative;
+    top: 0px;
+}
+
+/* Message Moderators */
+
+.sidecontentbox {
+    position: relative;
+    top: -30px;
+    right: 10px;
+}
+
+/*  
+
+
+
+h box */
+
+.side #search {
+    position: absolute;
+    top: 160px;
+    right: 24px;
+    z-index: 102;
+}
+
+.side #search input[type=text] {
+    margin-top: 0px;
+    width: 278px;
+     opacity: 0.7;
+}
+
+.side #search input[type=text]:focus {
+    margin-top: 0px;
+    width: 278px;
+    opacity: 0.9;
+}
+
+.side #search input[type=text]:hover {
+    margin-top: 0px;
+    width: 278px;
+    opacity: 0.9;
+}
+
+/* Login box */
+
+.login-form-side {
+    overflow: hidden;
+    position: relative;
+    right: 10px;
+    background-color: #0c0c0c;
+    color: #98aaa9;
+    border: 0px;
+    box-shadow: 0 2px 2px 0 rgb(12, 12, 12),0 3px 1px -2px rgb(12, 12, 12),0 1px 5px 0 rgb(12, 12, 12);
+}
+
+/* Under search box */
+
+/*.side:after {
+    position: relative;
+    top: -50px;
+    right: 10px;
+    display: block;
+    margin-top : 5px;
+    padding: 10px 0;
+    color: #ffffff;
+    background: #021598;
+    content: "Submit new ";
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgb(12, 12, 12),0 3px 1px -2px rgb(12, 12, 12),0 1px 5px 0 rgb(12, 12, 12);
+
+}*/
+
+/* Buttons */
+
+.morelink a {
+    color: #f7f7f7;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#1668c3, #0f4989); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1668c3, #0f4989); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1668c3, #0f4989); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1668c3, #0f4989); /* Standard syntax */
+}
+
+.morelink:hover a {
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#0f4989, #1668c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0f4989, #1668c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0f4989, #1668c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0f4989, #1668c3); /* Standard syntax */
+}
+
+
+
+/* --- Submit buttons --- */
+
+/* Removed triangles on ends */
+
+.nub { display: none; }
+
+.sidebox.submit .morelink  {
+    width: 145px;
+    position: relative;
+    right: 10px;
+    z-index: 101;  
+} 
+
+.sidebox.submit.submit-text {
+    position: relative;
+    top: -43px;
+    right: -152px;
+}
+
+.sidebox.submit {
+  width: 140px;
+
+}
+
+.side {
+   position: relative;
+   top: -50px;
+
+}
+
+/* Subscribe button */
+
+.fancy-toggle-button .add {
+    z-index: 103;
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    content: "Subscribe";
+    background-color: #00ff00;
+    background: -webkit-linear-gradient(#00ff00, #028902); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00ff00, #028902); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00ff00, #028902); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00ff00, #028902); /* Standard syntax */
+    border-radius: 1px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    font-size: 14px;
+    position: relative;
+   /* top: -538px;
+    right: -200px; */
+}
+
+.fancy-toggle-button .remove{
+    z-index: 103;
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    content: "Unsub";
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#114f93, #0c396b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#114f93, #0c396b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#114f93, #0c396b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#114f93, #0c396b); /* Standard syntax */
+    border-radius: 1px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    font-size: 11px;
+    position: relative;
+    /*top: -538px;
+    right: -200px;*/
+    color: #f7f7f7;
+}
+
+/* Subscribers Text */
+
+.subscribers .word, .users-online .word{
+    display: none;
+}
+
+.users-online {
+    color: #ffffff;
+    z-index: 150;
+    position: relative;
+    float: right;
+    top: -21px;
+}
+
+.subscribers {
+    z-index: 150;
+    color: #ffffff;
+    position: relative;
+    background-color: #333333;
+    width: 298px;
+    display: block;
+    left: -9px;
+    padding: 5px;
+}
+
+.subscribers .number:after { 
+    content: " readers"
+}
+
+.users-online {
+    color: #ffffff; 
+    z-index: 150;
+    position: relative;
+
+}
+
+.users-online .number:after { 
+    content: " players online now"
+}
+
+/* Flair info */
+
+.flairselector {
+    height: auto;
+    width: 250px !important;
+    top: 10px !important;
+    left: 0px !important;
+    position: relative !important;
+}
+
+.side .titlebox .tagline {
+    color: #0c0c0c;
+}
+
+a.flairselectbtn {
+    width: 42px;
+    text-align: center;
+    color: #f7f7f7 !important;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#1668c3, #0f4989); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1668c3, #0f4989); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1668c3, #0f4989); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1668c3, #0f4989); /* Standard syntax */
+
+}
+
+a.flairselectbtn:hover{
+    width: 42px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#0f4989, #1668c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0f4989, #1668c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0f4989, #1668c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0f4989, #1668c3); /* Standard syntax */
+    text-decoration: none;
+}
+
+.side .titlebox .tagline {
+    margin: 0px;
+}
+
+.leavemoderator {
+    display: none;
+}
+
+.leavecontributor-button {
+    display: none;
+}
+
+.bottom {
+    display: none;
+}
+
+.titlebox form.toggle {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 5px;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 5px;
+    width: 255px;
+    display: block;
+}
+
+/* Sidebar Top Image */
+
+.side:before {
+    background: url(%%featured-image%%);
+    position: relative;
+    top: 0px;
+    right: 10px;
+    content: "";
+    width: 300px;
+    height: 200px;
+    display: block;
+    z-index: 99;
+    border-radius: 2px;
+    border: solid 1px #3a4ed5;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.side .titlebox h1.redditname {
+    z-index: 100;
+    font-family: Lato,arial,verdana,helvetica,sans-serif;
+}
+
+
+/* Sidebar text  */
+
+.md {
+    color: #98aaa9;
+    padding: 5px;
+}
+
+.side .md p {
+    color: #98aaa9;
+}
+
+
+.linkinfo {  /* on comments page only */
+    position: relative;
+    right: 10px;
+}
+
+/*  Extra sidebar box not currently used */
+
+/*.side .titlebox h1.redditname:before {
+    background: #0c0c0c;
+    content: " ";
+    display: block;
+    width: 302px;
+    z-index: -1;
+    height: 76px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}*/
+
+.titlebox h1 a {
+    color: #ffffff;
+}
+
+
+/* Content */
+
+.content {
+    margin-top: 45px;
+}
+
+.link {
+    background-color: #f7f7f7;
+    padding: 4px;
+}
+
+
+/* Up and Down Vote icons */
+
+.arrow.up { 
+    background: url(%%up-light%%) 0 0;
+    background-repeat: no !important;
+    width: 20px;
+    height: 20px;
+} 
+
+.arrow.down { 
+    background: url(%%down-light%%) 0 0; 
+    background-repeat: no !important;
+    width: 20px;
+    height: 20px;
+} 
+
+.arrow.upmod { 
+    background: url(%%up%%) 0 0;
+    background-repeat: no !important;
+    width: 20px;
+    height: 20px;
+} 
+
+.arrow.downmod { 
+    background: url(%%down%%) 0 0; 
+    background-repeat: no !important;
+    width: 20px;
+    height: 20px;
+} 
+
+.arrow {
+    width: 20px;
+}
+
+/* Arrows on Recent Content */
+
+
+.sidecontentbox .arrow.up { 
+    background: url(%%triangle-grey%%) 0 0;
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.sidecontentbox .arrow.down { 
+    background: url(%%x-grey%%) 0 0; 
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.sidecontentbox .arrow.upmod { 
+    background: url(%%triangle-bright%%) 0 0;
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.sidecontentbox .arrow.downmod { 
+    background: url(%%x-bright%%) 0 0; 
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.comment .arrow.up { 
+    background: url(%%triangle-grey%%) 0 0;
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.comment .arrow.down { 
+    background: url(%%x-grey%%) 0 0; 
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.comment .arrow.upmod { 
+    background: url(%%triangle-bright%%) 0 0;
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.comment .arrow.downmod { 
+    background: url(%%x-bright%%) 0 0; 
+    background-repeat: no !important;
+    width: 14px;
+    height: 14px;
+} 
+
+.link .score.likes {
+    color: #dc5c5f;
+}
+
+/* thread thumbnails */
+
+.thumbnail.default { 
+    background: url(%%thumbnail-default%%); 
+}
+
+.thumbnail.self { 
+    background: url(%%thumbnail-default%%); 
+}
+
+.over18 .thumbnail img {
+    display: none;
+}
+.over18 .thumbnail {
+    background: url(%%thumbnail-NSFW%%);
+}
+
+.thumbnail[href*="psvr"] {
+    background-image: url(%%thumbnail-PSVR%%);
+    background-position: 0px 0px;
+    min-width: 70px;
+    min-height: 50px;
+
+}  
+ 
+
+.thumbnail[href*="deal"] {
+    background-image: url(%%thumbnail-deal%%);
+    background-position: 0px 0px;
+    min-width: 70px;
+    min-height: 50px;
+
+} 
+
+.thumbnail[href*="discount"] {
+    background-image: url(%%thumbnail-deal%%);
+    background-position: 0px 0px;
+    min-width: 70px;
+    min-height: 50px;
+
+} 
+
+.thumbnail[href*="code"] {
+    background-image: url(%%thumbnail-deal%%);
+    background-position: 0px 0px;
+    min-width: 70px;
+    min-height: 50px;
+
+} 
+
+.thumbnail[href*="tv"] {
+    background-image: url(%%thumbnail-tv%%);
+    background-position: 0px 0px;
+    min-width: 70px;
+    min-height: 50px;
+
+} 
+
+
+/* Link Flairs */
+
+.linkflairlabel {
+    max-width: none;
+}
+
+.linkflair-tv .linkflairlabel {
+    color: #f7f7f7;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #01c1ae;
+    background: -webkit-linear-gradient(#01c1ae, #017f72); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#01c1ae, #017f72); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#01c1ae, #017f72); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#01c1ae, #017f72); /* Standard syntax */
+}
+
+.linkflair-tv .linkflairlabel:hover {
+    border-radius: 2px;
+    background: #017f72;
+    background: -webkit-linear-gradient(#017f72, #01c1ae); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#017f72, #01c1ae); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#017f72, #01c1ae); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#017f72, #01c1ae); /* Standard syntax */
+} 
+
+
+
+.linkflair-PSVR .linkflairlabel {
+    color: #f7f7f7;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #3fc9fc;
+    background: -webkit-linear-gradient(#3fc9fc, #0142aa); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3fc9fc, #0142aa); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3fc9fc, #0142aa); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3fc9fc, #0142aa); /* Standard syntax */
+}
+
+.linkflair-PSVR .linkflairlabel:hover {
+    border-radius: 2px;
+    background: #0142aa;
+    background: -webkit-linear-gradient(#0142aa, #3fc9fc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0142aa, #3fc9fc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0142aa, #3fc9fc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0142aa, #3fc9fc); /* Standard syntax */
+}
+
+.linkflair-deal .linkflairlabel {
+    color: #f7f7f7;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #a226d3;
+    background: -webkit-linear-gradient(#b748e2, #7501a3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b748e2, #7501a3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b748e2, #7501a3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b748e2, #7501a3); /* Standard syntax */
+}
+
+.linkflair-deal .linkflairlabel:hover {
+    border-radius: 2px;
+    background: #7501a3;
+    background: -webkit-linear-gradient(#7501a3, #b748e2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7501a3, #b748e2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7501a3, #b748e2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7501a3, #b748e2); /* Standard syntax */
+}
+
+.linkflair-support .linkflairlabel {
+    color: #f7f7f7;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #42f462;
+    background: -webkit-linear-gradient(#42f462, #01b222); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#42f462, #01b222); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#42f462, #01b222); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#42f462, #01b222); /* Standard syntax */
+}
+
+.linkflair-support .linkflairlabel:hover {
+    border-radius: 2px;
+    background: #01b222;
+    background: -webkit-linear-gradient(#01b222, #42f462); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#01b222, #42f462); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#01b222, #42f462); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#01b222, #42f462); /* Standard syntax */
+}
+
+.linkflair-rant .linkflairlabel {
+    color: #f7f7f7;
+    padding: 0px 5px 0px 5px;
+    border-radius: 2px;
+    background: #333333;
+    background: -webkit-linear-gradient(#333333, #0c0c0c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333333, #0c0c0c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333333, #0c0c0c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333333, #0c0c0c); /* Standard syntax */
+}
+
+.linkflair-rant .linkflairlabel:hover {
+    border-radius: 2px;
+    background: #0c0c0c;
+    background: -webkit-linear-gradient(#0c0c0c, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0c0c0c, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0c0c0c, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0c0c0c, #333333); /* Standard syntax */
+}
+
+
+.linkflair-red .linkflairlabel {
+    color: red;
+}
+
+
+/* Link Fiters - Makes subdomain */
+
+html:lang(xx) .linkflair-tv {
+    display: none    }
+
+html:lang(vt) .link:not(.linkflair-tv) {
+    display: none    }
+
+html:lang(re) .link:not(.linkflair-deal) {
+    display: none    }
+
+html:lang(vr) .link:not(.linkflair-PSVR) {
+    display: none    }
+
+html:lang(st) .link:not(.linkflair-support) {
+    display: none    }
+
+html:lang(ra) .link:not(.linkflair-rant) {
+    display: none    }
+
+/* Filter buttons in sidebar */
+
+/* No TV Posts */
+
+.side [href*='#e'] {
+    color: #0c0c0c !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.side a[href*='#e'] {
+    border-radius: 2px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(#ffffff, #f7f7f7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffffff, #f7f7f7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffffff, #f7f7f7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #f7f7f7); /* Standard syntax */
+}
+
+.side a[href*='#e']:hover {
+    border-radius: 2px;
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #ffffff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f7f7f7, #ffffff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f7f7f7, #ffffff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f7f7f7, #ffffff); /* Standard syntax */
+}
+
+.side [href*='#xx'] {
+    color: #f7f7f7 !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.side a[href*='#xx'] {
+    border-radius: 2px;
+    background: #fc3f45;
+    background: -webkit-linear-gradient(#fc3f45, #aa1111); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fc3f45, #aa1111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fc3f45, #aa1111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fc3f45, #aa1111); /* Standard syntax */
+}
+
+.side a[href*='#xx']:hover {
+    border-radius: 2px;
+    background: #aa1111;
+    background: -webkit-linear-gradient(#aa1111, #fc3f45); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#aa1111, #fc3f45); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#aa1111, #fc3f45); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#aa1111, #fc3f45); /* Standard syntax */
+}
+
+/* TV */
+.side [href*='#vt'] {
+    color: #f7f7f7 !important;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 10px !important;
+}
+
+.side a[href*='#vt'] {
+    border-radius: 2px;
+    background: #01c1ae;
+    background: -webkit-linear-gradient(#01c1ae, #017f72); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#01c1ae, #017f72); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#01c1ae, #017f72); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#01c1ae, #017f72); /* Standard syntax */
+}
+
+.side a[href*='#vt']:hover {
+    border-radius: 2px;
+    background: #017f72;
+    background: -webkit-linear-gradient(#017f72, #01c1ae); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#017f72, #01c1ae); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#017f72, #01c1ae); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#017f72, #01c1ae); /* Standard syntax */
+}
+
+
+/* PSVR */
+
+.side [href*='#vr'] {
+    color: #f7f7f7 !important;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 10px !important;
+}
+
+.side a[href*='#vr'] {
+    border-radius: 2px;
+    background: #3fc9fc;
+    background: -webkit-linear-gradient(#3fc9fc, #0142aa); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3fc9fc, #0142aa); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3fc9fc, #0142aa); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3fc9fc, #0142aa); /* Standard syntax */
+}
+
+.side a[href*='#vr']:hover {
+    border-radius: 2px;
+    background: #0142aa;
+    background: -webkit-linear-gradient(#0142aa, #3fc9fc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0142aa, #3fc9fc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0142aa, #3fc9fc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0142aa, #3fc9fc); /* Standard syntax */
+}
+
+/* Deals */
+
+.side [href*='#re'] {
+    color: #f7f7f7 !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.side a[href*='#re'] {
+    border-radius: 2px;
+    background: #b748e2;
+    background: -webkit-linear-gradient(#b748e2, #7501a3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#b748e2, #7501a3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#b748e2, #7501a3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#b748e2, #7501a3); /* Standard syntax */
+}
+
+.side a[href*='#re']:hover {
+    border-radius: 2px;
+    background: #7501a3;
+    background: -webkit-linear-gradient(#7501a3, #b748e2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#7501a3, #b748e2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#7501a3, #b748e2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#7501a3, #b748e2); /* Standard syntax */
+}
+
+.side [href*='#st'] {
+    color: #f7f7f7 !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.side a[href*='#st'] {
+    border-radius: 2px;
+    background: #42f462;
+    background: -webkit-linear-gradient(#42f462, #01b222); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#42f462, #01b222); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#42f462, #01b222); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#42f462, #01b222); /* Standard syntax */
+}
+
+.side a[href*='#st']:hover {
+    border-radius: 2px;
+    background: #01b222;
+    background: -webkit-linear-gradient(#01b222, #42f462); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#01b222, #42f462); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#01b222, #42f462); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#01b222, #42f462); /* Standard syntax */
+}
+
+.side [href*='#ra'] {
+    color: #cc0066 !important;
+    padding: 0px 5px 0px 5px;
+}
+
+.side a[href*='#ra'] {
+    border-radius: 2px;
+    background: #333333;
+    background: -webkit-linear-gradient(#333333, #0c0c0c); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333333, #0c0c0c); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333333, #0c0c0c); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333333, #0c0c0c); /* Standard syntax */
+}
+
+.side a[href*='#ra']:hover {
+    border-radius: 2px;
+    background: #0c0c0c;
+    background: -webkit-linear-gradient(#0c0c0c, #333333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0c0c0c, #333333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0c0c0c, #333333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0c0c0c, #333333); /* Standard syntax */
+}
+  
+    
+
+
+.footer {
+    background: #020202;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.footer-parent {
+    background: url(%%swoosh-pro-bluer%%)  center scroll !important;
+    /*margin: 0 auto;
+    padding: 288px 0 0 0;*/
+    padding-bottom: 26%;
+    height: 26%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+   /* background-size: auto 80%;*/
+}
+
+.bottommenu {
+    color: #98aaa9;
+}
+
+/* Submit Thread Page */
+
+.roundfield {
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #1668c3;
+}
+
+.tabmenu.formtab .selected a {
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #3a4ed5;
+    background: -webkit-linear-gradient(#1668c3, #0f4989); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1668c3, #0f4989); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1668c3, #0f4989); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1668c3, #0f4989); /* Standard syntax */
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tabmenu.formtab .selected a:hover {
+    font-family: "Arial Bold",Arial,Helvetica,sans-serif;
+    color: #f7f7f7;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #1668c3;
+    background: -webkit-linear-gradient(#0f4989, #1668c3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0f4989, #1668c3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0f4989, #1668c3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0f4989, #1668c3); /* Standard syntax */
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tabmenu.formtab a {
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#98aaa9, #f7f7f7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#98aaa9, #f7f7f7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#98aaa9, #f7f7f7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#98aaa9, #f7f7f7); /* Standard syntax */
+    font-weight: bold;
+    border: none;
+}
+
+.tabmenu.formtab a:hover {
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(#f7f7f7, #98aaa9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f7f7f7, #98aaa9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f7f7f7, #98aaa9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f7f7f7, #98aaa9); /* Standard syntax */
+    font-weight: bold;
+    border: none;
+}
+
+.linkinfo{
+    background-color: #fcbc74;
+    border-radius: 2px;
+    border: none;
+}
+
+.reddit-infobar {
+    background-color: #fcbc74;
+    border-radius: 2px;
+    border: none;
+}
+
+.infobar {
+    background-color: #fcbc74;
+    border-radius: 2px;
+    border: none;
+}
+
+.content.submit .info-notice {
+    background-color: #fcbc74;
+    border-radius: 2px;
+    border: none;
+}
+
+.formtabs-content {
+    border-top: 4px solid #1668c3;
+}
+
+/* Rules */
+
+.subreddit-rules-page {
+    top: 50px;
+}
+
+
+/* Comments */
+
+.comment .midcol {
+    margin-right: 10px;
+    width: 21px;
+}
+
+.link .usertext-body .md {
+    background-color: #f7f7f7;
+    border: 0px;
+    border-radius: 2px;
+}
+
+/* wiki  */
+
+.wiki-page-content .md h2 {
+    font-size: 16px;
+}
+
+.wiki-page-content .md h3 {
+    font-size: 14px;
+}
+
+/* Flairs */
+
+.flair {
+    background: url(%%spritesheet%%) no-repeat -9999px;
+    border: 0;
+    vertical-align: middle;
+    /*;*/
+    min-width: 57px;
+   /*padding-left: 85px
+    text-indent: 85px;*/
+}
+
+.flair-Buttons {
+    min-width: 50px;
+    text-indent: 53px;
+    height: 11px;
+    line-height: 11px;
+    background-position: 0 0;
+}
+
+.flair-DS4-Anniversary {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 11px;
+    background-position: 0 -11px;
+}
+
+.flair-DS4-Black {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -30px;
+}
+
+.flair-DS4-Blue {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -49px;
+}
+
+.flair-DS4-Camo {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 10px;
+    background-position: 0 -68px;
+}
+
+.flair-DS4-Clear {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    background-position: 0 -87px;
+}
+
+.flair-DS4-Gold {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -106px;
+}
+
+.flair-DS4-Grey-Blue {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -125px;
+}
+
+.flair-DS4-Red {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -144px;
+}
+
+.flair-DS4-Silver {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 10px;
+    background-position: 0 -163px;
+}
+
+.flair-DS4-Starwars {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -182px;
+}
+
+.flair-DS4-SteelBlack {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -201px;
+}
+
+.flair-DS4-White {
+    min-width: 30px;
+    text-indent: 33px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -220px;
+}
+
+.flair-Japanese {
+    min-width: 88px;
+    text-indent: 91px;
+    height: 11px;
+    line-height: 19px;
+    background-position: 0 -239px;
+}
+
+.flair-PSN {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 24px;
+    line-height: 19px;
+    background-position: 0 -250px;
+}
+
+.flair-PlayStation-Grey {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -274px;
+}
+
+.flair-PlayStation-Orginal {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 19px;
+    line-height: 19px;
+    background-position: 0 -293px;
+}
+
+.flair-PlayStation-Plus {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 24px;
+    line-height: 24px;
+    background-position: 0 -312px;
+}
+
+.flair-PlayStation-VR-Headset {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 15px;
+    line-height: 15px;
+    background-position: 0 -336px;
+}
+
+.flair-PlayStation-VR-Icon {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 18px;
+    line-height: 18px;
+    background-position: 0 -351px;
+}
+
+.flair-Playstation-Logo-Black {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -369px;
+}
+
+.flair-Playstation-Logo-Blue {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -389px;
+}
+
+.flair-Playstation-Logo-Green {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -409px;
+}
+
+.flair-Playstation-Logo-Orange {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -429px;
+}
+
+.flair-Playstation-Logo-Pink {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    background-position: 0 -449px;
+}
+
+.flair-Playstation-Logo-Purple {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -469px;
+}
+
+.flair-Playstation-Logo-Teal {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -489px;
+}
+
+.flair-Playstation-Logo-Vector {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -509px;
+}
+
+.flair-Playstation-Logo-Yellow {
+    min-width: 25px;
+    text-indent: 28px;
+    height: 20px;
+    line-height: 20px;
+    background-position: 0 -529px;
+}
+
+.flair-Sony-Interactive-Entertainm {
+    min-width: 30px;
+    text-indent: 28px;
+    height: 30px;
+    line-height: 20px;
+    background-position: 0 -549px;
+}
+
+#header-img {
+    display: none;
+}
