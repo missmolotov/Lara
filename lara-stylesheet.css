@@ -1,8 +1,8 @@
 /*
 				Version 1.0
 				Stylesheet by miss_molotov
-        Created November 2016, first used on r/PS4Pro.
-				Last modified: 13 May 2017.
+                Created November 2016, first used on r/PS4Pro.
+				Last modified: 24th June 2017.
 				Details: This is a custom template called 'Lara' made by u/miss_molotov
 				You may re-use, but this header must remain intact.
 				-------------------------------------------------------------------------- */
@@ -11,7 +11,6 @@ body {
     background-color: #f7f7f7;
     background: linear-gradient(to right, #f7f7f7, #e3e6fc);
     color: #0c0c0c;
-
 }
 
 p, table, li {
@@ -56,8 +55,8 @@ a:active {
 }
 
 #header {
-   background-color: #0c0c0c;
-   height: 100px;
+   background: url(%%Nex-Machina%%);
+   height: 170px;
 }
 
 /* removes Reddit logo */
@@ -91,7 +90,7 @@ a:active {
     background-position: 0 0px;
     width: 72px;
     height: 55px;
-    margin-top: 5px;
+    margin-top: 38px;
     margin-right: 19px;
     margin-left: 12px;
     float: left;
@@ -106,7 +105,8 @@ a:active {
     height: 35px;
     float: left;
     font-size: 0px;
-    margin-top: 18px;
+    margin-top: 48px;
+    margin-left: 22px;
 }
 
 /* Tabmenu (top menu under header) */
@@ -114,8 +114,9 @@ a:active {
 #header .tabmenu {
   font-size: 14px;
   position: absolute;
-  top: 80px;
-  left: 0px;   background-color: #0c0c0c;
+  top: 120px;
+  left: 0px;   
+  background-color: transparent;
   margin: 0px;
   width: 100%;
   font-family: 'Arial Bold', Arial,Helvetica, sans-serif;
@@ -137,7 +138,7 @@ a:active {
 
 #header .tabmenu li a {
   padding: 0px 6px;
-  background-color: #0c0c0c;
+  background-color: transparent;
   color: #98aaa9;
 }
 
@@ -151,7 +152,7 @@ a:active {
 }
 
 #header .tabmenu li a:active {
-    background-color: #0c0c0c; 
+    background-color: transparent; 
     transition: all 0s
 }
 
@@ -493,7 +494,7 @@ h box */
 
 .side {
    position: relative;
-   top: -50px;
+   top: -100px;
 
 }
 
@@ -1588,3 +1589,33 @@ html:lang(ra) .link:not(.linkflair-rant) {
 #header-img {
     display: none;
 }
+
+/* Medal Flairs */
+
+.flair[class*="medal-"] {
+    padding: 2px 5px;
+    height: 12px;
+    vertical-align: middle;
+    padding-left: 21px;
+    background-image: url(%%spritesheet-medal%%);
+    background-size: calc(40px / 2); 
+    border: none;
+}
+
+.flair-medal-bronze {
+    background: no-repeat 0px 0px;
+    background-color: transparent !important;
+}
+.flair-medal-gold {
+    background: no-repeat 0px -15px;
+    background-color: transparent !important;
+}
+.flair-medal-silver {
+    background: no-repeat 0px -30px;
+    background-color: transparent !important;
+}
+.flair-medal-omega {
+    background: no-repeat 0px -45px;
+    background-color: transparent !important;
+}
+
